@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projetos\\ImobAdmin\\ImobAdmin\\ImobAdmin.csproj": {}
+    "C:\\Users\\Alec\\Projetos\\ImobAdmin\\ImobAdmin\\ImobAdmin.csproj": {}
   },
   "projects": {
-    "E:\\Projetos\\ImobAdmin\\ImobAdmin\\ImobAdmin.csproj": {
+    "C:\\Users\\Alec\\Projetos\\ImobAdmin\\ImobAdmin\\ImobAdmin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projetos\\ImobAdmin\\ImobAdmin\\ImobAdmin.csproj",
+        "projectUniqueName": "C:\\Users\\Alec\\Projetos\\ImobAdmin\\ImobAdmin\\ImobAdmin.csproj",
         "projectName": "ImobAdmin",
-        "projectPath": "E:\\Projetos\\ImobAdmin\\ImobAdmin\\ImobAdmin.csproj",
-        "packagesPath": "C:\\Users\\alecg\\.nuget\\packages\\",
-        "outputPath": "E:\\Projetos\\ImobAdmin\\ImobAdmin\\obj\\",
+        "projectPath": "C:\\Users\\Alec\\Projetos\\ImobAdmin\\ImobAdmin\\ImobAdmin.csproj",
+        "packagesPath": "C:\\Users\\Dev\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alec\\Projetos\\ImobAdmin\\ImobAdmin\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\alecg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dev\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -1,10 +1,14 @@
-﻿namespace ImobAdmin.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace ImobAdmin.Models
 {
     public class Categoria
     {
         public int CategoriaId { get; set; }
-        public bool Venda { get; set; }
-        public bool Locacao { get; set; }
-        public List<Imoveis> Imoveis { get; set; }
+        [MaxLength(100)]
+        public string NomeCategoria { get; set; }
+
+
+        public virtual ICollection<Imovel> Imoveis { get; set; }
     }
 }
