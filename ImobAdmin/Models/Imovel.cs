@@ -1,4 +1,7 @@
-﻿namespace ImobAdmin.Models
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace ImobAdmin.Models
 {
     public class Imovel
     {
@@ -12,17 +15,24 @@
 
         //--- resto
 
+        [Required(ErrorMessage = "Informe o preço do imóvel!")]
+        [Display(Name = "Preço")]
+        [Column(TypeName = "decimal(10,2)")]
         public decimal Preco { get; set; }
+        [StringLength(50, ErrorMessage = "Ultrapassou o limite de caracteres possíveis...")]
         public string NomeContato { get; set; }
         public int TelContato { get; set; }
 
         [Obsolete]
         public bool EhVenda { get; set; }
         public TipoAcao TipoAcao { get; set; } //bonitao
-
+        [Display(Name = "Está em destaque?")]
         public bool EstaEmDestaque { get; set; }
-
-        public string DescricaoNome { get; set; }
+        [Required(ErrorMessage = "A descrição do imóvel deve ser informada!")]
+        [Display(Name = "Descrição")]
+        [MinLength(20, ErrorMessage = "Descrição deve ter no mínimo {1} caracteres...")]
+        [MaxLength(200, ErrorMessage = "Descrição não pode exceder {1} caracteres...")]
+        public string Descricao { get; set; }
         public int Dormitorios { get; set; }
         public int Banheiros { get; set; }
         public int Sala { get; set; }
