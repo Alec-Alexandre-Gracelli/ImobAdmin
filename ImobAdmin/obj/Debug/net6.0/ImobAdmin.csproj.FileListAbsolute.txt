@@ -266,3 +266,14 @@ E:\Projetos\ImobAdmin\ImobAdmin\obj\Debug\net6.0\ImobAdmin.dll
 E:\Projetos\ImobAdmin\ImobAdmin\obj\Debug\net6.0\ref\ImobAdmin.dll
 E:\Projetos\ImobAdmin\ImobAdmin\obj\Debug\net6.0\ImobAdmin.pdb
 E:\Projetos\ImobAdmin\ImobAdmin\obj\Debug\net6.0\ImobAdmin.genruntimeconfig.cache
+C:\Users\Alec\Projetos\ImobAdmin\ImobAdmin\obj\Debug\net6.0\ImobAdmin.csproj.AssemblyReference.cache
+C:\Users\Alec\Projetos\ImobAdmin\ImobAdmin\obj\Debug\net6.0\ImobAdmin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alec\Projetos\ImobAdmin\ImobAdmin\obj\Debug\net6.0\ImobAdmin.AssemblyInfoInputs.cache
+C:\Users\Alec\Projetos\ImobAdmin\ImobAdmin\obj\Debug\net6.0\ImobAdmin.AssemblyInfo.cs
+C:\Users\Alec\Projetos\ImobAdmin\ImobAdmin\obj\Debug\net6.0\ImobAdmin.csproj.CoreCompileInputs.cache
+C:\Users\Alec\Projetos\ImobAdmin\ImobAdmin\obj\Debug\net6.0\ImobAdmin.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Alec\Projetos\ImobAdmin\ImobAdmin\obj\Debug\net6.0\ImobAdmin.RazorAssemblyInfo.cache
+C:\Users\Alec\Projetos\ImobAdmin\ImobAdmin\obj\Debug\net6.0\ImobAdmin.RazorAssemblyInfo.cs
+C:\Users\Alec\Projetos\ImobAdmin\ImobAdmin\obj\Debug\net6.0\ImobAdmin.dll
+C:\Users\Alec\Projetos\ImobAdmin\ImobAdmin\obj\Debug\net6.0\ref\ImobAdmin.dll
+C:\Users\Alec\Projetos\ImobAdmin\ImobAdmin\obj\Debug\net6.0\ImobAdmin.pdb
