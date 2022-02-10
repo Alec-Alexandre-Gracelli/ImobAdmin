@@ -15,10 +15,13 @@ namespace ImobAdmin.Models
 
         //--- resto
 
+        public string NomeImovel { get; set; }
+
         [Required(ErrorMessage = "Informe o preço do imóvel!")]
         [Display(Name = "Preço")]
         [Column(TypeName = "decimal(10,2)")]
         public decimal Preco { get; set; }
+
         [StringLength(50, ErrorMessage = "Ultrapassou o limite de caracteres possíveis...")]
         public string NomeContato { get; set; }
         public int TelContato { get; set; }
@@ -26,8 +29,10 @@ namespace ImobAdmin.Models
         [Obsolete]
         public bool EhVenda { get; set; }
         public TipoAcao TipoAcao { get; set; } //bonitao
+
         [Display(Name = "Está em destaque?")]
         public bool EstaEmDestaque { get; set; }
+
         [Required(ErrorMessage = "A descrição do imóvel deve ser informada!")]
         [Display(Name = "Descrição")]
         [MinLength(20, ErrorMessage = "Descrição deve ter no mínimo {1} caracteres...")]

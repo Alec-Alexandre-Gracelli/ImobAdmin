@@ -1,4 +1,6 @@
 ﻿using ImobAdmin.Context;
+using ImobAdmin.Repositories;
+using ImobAdmin.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace ImobAdmin;
@@ -16,6 +18,10 @@ public class Startup
     {
         services.AddDbContext<AppDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+        services.AddTransient<IImovelRepository, ImovelRepository>();
+        services.AddTransient<ICategoriaRepository, CategoriaRepository>();
+
         services.AddControllersWithViews();
     }
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -31,9 +37,7 @@ public class Startup
         }
         app.UseHttpsRedirection();
         app.UseStaticFiles();
-        app.UseRouting();
-
-        app.UseSession();
+        app.UseRouting();       
 
         app.UseAuthorization();
 

@@ -14,7 +14,7 @@ namespace ImobAdmin.Migrations
                 {
                     CategoriaId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    NomeCategoria = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true)
+                    NomeCategoria = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -27,7 +27,7 @@ namespace ImobAdmin.Migrations
                 {
                     CidadeId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    CidadeNome = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    CidadeNome = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -40,7 +40,7 @@ namespace ImobAdmin.Migrations
                 {
                     ImagemId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    ImagemNome = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ImagemNome = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
                     EhDestaque = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
@@ -55,7 +55,7 @@ namespace ImobAdmin.Migrations
                     BairroId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     CidadeId = table.Column<int>(type: "int", nullable: false),
-                    BairroNome = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    BairroNome = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -77,13 +77,14 @@ namespace ImobAdmin.Migrations
                     CategoriaId = table.Column<int>(type: "int", nullable: false),
                     BairroId = table.Column<int>(type: "int", nullable: false),
                     ImagemId = table.Column<int>(type: "int", nullable: false),
-                    Preco = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    NomeContato = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    NomeImovel = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Preco = table.Column<decimal>(type: "decimal(10,2)", nullable: false),
+                    NomeContato = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
                     TelContato = table.Column<int>(type: "int", nullable: false),
                     EhVenda = table.Column<bool>(type: "bit", nullable: false),
                     TipoAcao = table.Column<int>(type: "int", nullable: false),
                     EstaEmDestaque = table.Column<bool>(type: "bit", nullable: false),
-                    DescricaoNome = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Descricao = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
                     Dormitorios = table.Column<int>(type: "int", nullable: false),
                     Banheiros = table.Column<int>(type: "int", nullable: false),
                     Sala = table.Column<int>(type: "int", nullable: false),

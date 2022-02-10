@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ImobAdmin.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20220209164317_MigracaoInicial")]
+    [Migration("20220210185047_MigracaoInicial")]
     partial class MigracaoInicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -32,7 +32,9 @@ namespace ImobAdmin.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("BairroId"), 1L, 1);
 
                     b.Property<string>("BairroNome")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<int>("CidadeId")
                         .HasColumnType("int");
@@ -53,6 +55,7 @@ namespace ImobAdmin.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CategoriaId"), 1L, 1);
 
                     b.Property<string>("NomeCategoria")
+                        .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
@@ -70,7 +73,9 @@ namespace ImobAdmin.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CidadeId"), 1L, 1);
 
                     b.Property<string>("CidadeNome")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("CidadeId");
 
@@ -89,7 +94,8 @@ namespace ImobAdmin.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("ImagemNome")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.HasKey("ImagemId");
 
@@ -119,8 +125,10 @@ namespace ImobAdmin.Migrations
                     b.Property<int>("Cozinha")
                         .HasColumnType("int");
 
-                    b.Property<string>("DescricaoNome")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<string>("Descricao")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.Property<int>("Dormitorios")
                         .HasColumnType("int");
@@ -138,13 +146,17 @@ namespace ImobAdmin.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("NomeContato")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("NomeImovel")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("Piscina")
                         .HasColumnType("bit");
 
                     b.Property<decimal>("Preco")
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("decimal(10,2)");
 
                     b.Property<int>("Sala")
                         .HasColumnType("int");
