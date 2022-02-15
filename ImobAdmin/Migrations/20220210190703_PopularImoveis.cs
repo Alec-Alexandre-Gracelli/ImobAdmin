@@ -8,19 +8,19 @@ namespace ImobAdmin.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.Sql("INSERT INTO Imoveis(CategoriaId, NomeImovel, ImagemId, Preco, NomeContato, TelContato, TipoAcao, EstaEmDestaque) " + 
-                "Descricao,Dormitorios,Banheiros,Sala,Cozinha,Vagas,Churrasqueira,Piscina,Edicula) " +
-                "VALUES()");
+            migrationBuilder.Sql("INSERT INTO Imoveis(CategoriaId, NomeImovel, ImagemId, Preco, NomeContato, TelContato, TipoAcao, EstaEmDestaque, " + 
+                "Descricao,Dormitorios,Banheiros,Sala,Cozinha,Vagas,Churrasqueira,Piscina,Edicula)" +
+                "VALUES");
 
-            migrationBuilder.Sql("INSERT INTO Imoveis(CategoriaId, NomeImovel, ImagemId, Preco, NomeContato, TelContato, TipoAcao, EstaEmDestaque) " +
+            migrationBuilder.Sql("INSERT INTO Imoveis(CategoriaId, NomeImovel, ImagemId, Preco, NomeContato, TelContato, TipoAcao, EstaEmDestaque, " +
                  "Descricao,Dormitorios,Banheiros,Sala,Cozinha,Vagas,Churrasqueira,Piscina,Edicula) " +
                  "VALUES()");
 
-            migrationBuilder.Sql("INSERT INTO Imoveis(CategoriaId, NomeImovel, ImagemId, Preco, NomeContato, TelContato, TipoAcao, EstaEmDestaque) " +
+            migrationBuilder.Sql("INSERT INTO Imoveis(CategoriaId, NomeImovel, ImagemId, Preco, NomeContato, TelContato, TipoAcao, EstaEmDestaque, " +
                 "Descricao,Dormitorios,Banheiros,Sala,Cozinha,Vagas,Churrasqueira,Piscina,Edicula) " +
                 "VALUES()");
 
-            migrationBuilder.Sql("INSERT INTO Imoveis(CategoriaId, NomeImovel, ImagemId, Preco, NomeContato, TelContato, TipoAcao, EstaEmDestaque) " +
+            migrationBuilder.Sql("INSERT INTO Imoveis(CategoriaId, NomeImovel, ImagemId, Preco, NomeContato, TelContato, TipoAcao, EstaEmDestaque, " +
                  "Descricao,Dormitorios,Banheiros,Sala,Cozinha,Vagas,Churrasqueira,Piscina,Edicula) " +
                  "VALUES()");
         }
