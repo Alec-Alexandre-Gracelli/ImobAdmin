@@ -38,7 +38,7 @@ namespace ImobAdmin.Controllers
                 CategoriaAtual = categoriaAtual
             };
 
-            return View(imovelListViewModel);
+            return View(imoveis);
         }
 
         public IActionResult Details(int imovelId)

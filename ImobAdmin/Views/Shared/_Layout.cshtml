@@ -20,6 +20,7 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">                    
                     <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    <a class="nav-link text-light" asp-area="" asp-controller="Imovel" asp-action="List">Imovel</a>
                     <form class="navbar-form navbar-right" asp-controller="Imovel" asp-action="Search" method="get">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Procurar Imovel" name="searchString" value="@ViewData["searchString"]">
