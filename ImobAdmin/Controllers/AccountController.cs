@@ -1,8 +1,6 @@
 ﻿using ImobAdmin.ViewModel;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace ImobAdmin.Controllers
 {
@@ -11,7 +9,7 @@ namespace ImobAdmin.Controllers
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
 
-        public AccountController(UserManager<IdentityUser> userManager, 
+        public AccountController(UserManager<IdentityUser> userManager,
             SignInManager<IdentityUser> signInManager)
         {
             _userManager = userManager;
@@ -29,7 +27,7 @@ namespace ImobAdmin.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginViewModel loginVM)
         {
-            if(!ModelState.IsValid)
+            if (!ModelState.IsValid)
                 return View(loginVM);
 
             var user = await _userManager.FindByNameAsync(loginVM.UserName);
@@ -39,7 +37,7 @@ namespace ImobAdmin.Controllers
                 var result = await _signInManager.PasswordSignInAsync(user, loginVM.Password, false, false);
                 if (result.Succeeded)
                 {
-                    if(string.IsNullOrEmpty(loginVM.ReturnUrl))
+                    if (string.IsNullOrEmpty(loginVM.ReturnUrl))
                     {
                         return RedirectToAction("Index", "Home");
                     }
@@ -58,7 +56,7 @@ namespace ImobAdmin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(LoginViewModel registroVM)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 var user = new IdentityUser { UserName = registroVM.UserName, };
                 var result = await _userManager.CreateAsync(user, registroVM.Password);
@@ -77,7 +75,7 @@ namespace ImobAdmin.Controllers
 
         [HttpPost]
         public async Task<IActionResult> Logout()
-        {           
+        {
             HttpContext.User = null;
             await _signInManager.SignOutAsync();
             return RedirectToAction("Index", "Home");
