@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wnghFWUnwalM1HmMbaHTV0BRamUR5YNeQQYIGXeb+Z0=",
+  "Hash": "K79sOfLmo1ZYWvDs895Z0eqm+JLOSDQFOG3nLMhVaIY=",
   "Source": "ImobAdmin",
   "BasePath": "_content/ImobAdmin",
   "Mode": "Default",
@@ -168,6 +168,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Login.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Alec\\Projetos\\ImobAdmin\\ImobAdmin\\wwwroot\\Images\\Register.png",
+      "SourceId": "ImobAdmin",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Alec\\Projetos\\ImobAdmin\\ImobAdmin\\wwwroot\\",
+      "BasePath": "_content/ImobAdmin",
+      "RelativePath": "Images/Register.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Register.png"
     },
     {
       "Identity": "C:\\Users\\Alec\\Projetos\\ImobAdmin\\ImobAdmin\\wwwroot\\js\\site.js",
