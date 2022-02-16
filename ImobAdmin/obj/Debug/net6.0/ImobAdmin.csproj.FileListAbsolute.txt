@@ -534,3 +534,12 @@ C:\Users\Alec\Projetos\ImobAdmin\ImobAdmin\obj\Debug\net6.0\scopedcss\bundle\Imo
 C:\Users\Alec\Projetos\ImobAdmin\ImobAdmin\obj\Debug\net6.0\scopedcss\projectbundle\ImobAdmin.bundle.scp.css
 C:\Users\Alec\Projetos\ImobAdmin\ImobAdmin\obj\Debug\net6.0\ImobAdmin.csproj.CopyComplete
 C:\Users\Alec\Projetos\ImobAdmin\ImobAdmin\obj\Debug\net6.0\ImobAdmin.genruntimeconfig.cache
+C:\Users\Alec\Projetos\ImobAdmin\ImobAdmin\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Alec\Projetos\ImobAdmin\ImobAdmin\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Alec\Projetos\ImobAdmin\ImobAdmin\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Alec\Projetos\ImobAdmin\ImobAdmin\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\Alec\Projetos\ImobAdmin\ImobAdmin\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Alec\Projetos\ImobAdmin\ImobAdmin\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\Alec\Projetos\ImobAdmin\ImobAdmin\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Alec\Projetos\ImobAdmin\ImobAdmin\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Alec\Projetos\ImobAdmin\ImobAdmin\obj\Debug\net6.0\ImobAdmin.MvcApplicationPartsAssemblyInfo.cs

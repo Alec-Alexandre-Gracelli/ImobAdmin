@@ -13,7 +13,7 @@ namespace ImobAdmin.Controllers
             _imovelRepository = imovelRepository;
         }
 
-        public IActionResult List(string categoria)
+        public IActionResult Index(string categoria)
         {
             IEnumerable<Imovel> imoveis;
             string categoriaAtual = string.Empty;
