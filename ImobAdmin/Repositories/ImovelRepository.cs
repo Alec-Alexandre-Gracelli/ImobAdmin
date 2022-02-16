@@ -15,7 +15,7 @@ namespace ImobAdmin.Repositories
         }
 
         public IEnumerable<Imovel> Imoveis => _context.Imoveis.Include(c => c.Categoria);
-       
+
         public IEnumerable<Imovel> EmDestaques => _context.Imoveis.Where(p =>
         p.EstaEmDestaque).Include(c => c.Categoria);
 
