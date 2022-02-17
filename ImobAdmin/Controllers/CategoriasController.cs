@@ -14,6 +14,28 @@ namespace ImobAdmin.Controllers
             _context = context;
         }
 
+        public async Task<IActionResult> Index()
+        {
+            return View(await _context.Categorias.ToListAsync());
+        }
+
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var categoria = await _context.Categorias
+                .FirstOrDefaultAsync(m => m.CategoriaId == id);
+            if (categoria == null)
+            {
+                return NotFound();
+            }
+
+            return View(categoria);
+        }
+
         public IActionResult Create()
         {
             return View();

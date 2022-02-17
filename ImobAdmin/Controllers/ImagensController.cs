@@ -14,6 +14,28 @@ namespace ImobAdmin.Controllers
             _context = context;
         }
 
+        public async Task<IActionResult> Index()
+        {
+            return View(await _context.Imagens.ToListAsync());
+        }
+
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var imagem = await _context.Imagens
+                .FirstOrDefaultAsync(m => m.ImagemId == id);
+            if (imagem == null)
+            {
+                return NotFound();
+            }
+
+            return View(imagem);
+        }
+
         public IActionResult Create()
         {
             return View();

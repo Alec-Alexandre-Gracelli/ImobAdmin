@@ -14,6 +14,28 @@ namespace ImobAdmin.Controllers
             _context = context;
         }
 
+        public async Task<IActionResult> Index()
+        {
+            return View(await _context.Bairros.ToListAsync());
+        }
+
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var bairro = await _context.Bairros
+                .FirstOrDefaultAsync(m => m.BairroId == id);
+            if (bairro == null)
+            {
+                return NotFound();
+            }
+
+            return View(bairro);
+        }
+
         public IActionResult Create()
         {
             return View();
