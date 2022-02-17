@@ -1,0 +1,28 @@
+﻿@model ImobAdmin.Models.Imagem
+
+@{
+    ViewData["Title"] = "Detalhes";
+}
+
+<h1>Detalhes</h1>
+
+<div>
+    <h4>Imagem</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ImagemNome)
+        </dt>
+         <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ImagemNome)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EhDestaque)
+        </dt>
+         <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EhDestaque)
+        </dd>
+    </dl>
+    <a asp-action="Edit" asp-route-id="@Model.ImagemId">Editar</a> |
+    <a asp-action="Index">Voltar</a>
+</div>

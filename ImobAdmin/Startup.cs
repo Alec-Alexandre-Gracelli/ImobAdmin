@@ -1,6 +1,4 @@
 ﻿using ImobAdmin.Context;
-using ImobAdmin.Repositories;
-using ImobAdmin.Repositories.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -24,8 +22,6 @@ public class Startup
         services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<AppDbContext>();
 
-        services.AddTransient<IImovelRepository, ImovelRepository>();
-        services.AddTransient<ICategoriaRepository, CategoriaRepository>();
 
         services.AddControllersWithViews();
     }
