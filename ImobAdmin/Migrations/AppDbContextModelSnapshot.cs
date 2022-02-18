@@ -42,7 +42,7 @@ namespace ImobAdmin.Migrations
 
                     b.HasIndex("CidadeId");
 
-                    b.ToTable("Bairros");
+                    b.ToTable("Bairros", (string)null);
                 });
 
             modelBuilder.Entity("ImobAdmin.Models.Categoria", b =>
@@ -60,7 +60,7 @@ namespace ImobAdmin.Migrations
 
                     b.HasKey("CategoriaId");
 
-                    b.ToTable("Categorias");
+                    b.ToTable("Categorias", (string)null);
                 });
 
             modelBuilder.Entity("ImobAdmin.Models.Cidade", b =>
@@ -78,7 +78,7 @@ namespace ImobAdmin.Migrations
 
                     b.HasKey("CidadeId");
 
-                    b.ToTable("Cidades");
+                    b.ToTable("Cidades", (string)null);
                 });
 
             modelBuilder.Entity("ImobAdmin.Models.Imagem", b =>
@@ -98,7 +98,7 @@ namespace ImobAdmin.Migrations
 
                     b.HasKey("ImagemId");
 
-                    b.ToTable("Imagens");
+                    b.ToTable("Imagens", (string)null);
                 });
 
             modelBuilder.Entity("ImobAdmin.Models.Imovel", b =>
@@ -177,7 +177,7 @@ namespace ImobAdmin.Migrations
 
                     b.HasIndex("ImagemId");
 
-                    b.ToTable("Imoveis");
+                    b.ToTable("Imoveis", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
