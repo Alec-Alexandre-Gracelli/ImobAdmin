@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ImobAdmin.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20220217202236_PopularCategorias")]
-    partial class PopularCategorias
+    [Migration("20220218132356_CreateIdentity")]
+    partial class CreateIdentity
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

@@ -27,68 +27,108 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Categoria/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXENyZWF0ZS5jc2h0bWw=
+[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Bairros/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFpcnJvc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Categoria/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXERlbGV0ZS5jc2h0bWw=
+[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Bairros/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFpcnJvc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Categoria/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXERldGFpbHMuY3NodG1s
+[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Bairros/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFpcnJvc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Categoria/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXEVkaXQuY3NodG1s
+[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Bairros/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFpcnJvc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Categoria/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXEluZGV4LmNzaHRtbA==
+[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Bairros/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFpcnJvc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Categorias/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Categorias/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Categorias/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Categorias/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Categorias/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Cidades/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2lkYWRlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Cidades/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2lkYWRlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Cidades/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2lkYWRlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Cidades/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2lkYWRlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Cidades/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2lkYWRlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Imagem/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VtXENyZWF0ZS5jc2h0bWw=
+[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Imagens/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2Vuc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Imagem/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VtXERlbGV0ZS5jc2h0bWw=
+[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Imagens/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2Vuc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Imagem/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VtXERldGFpbHMuY3NodG1s
+[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Imagens/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2Vuc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Imagem/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VtXEVkaXQuY3NodG1s
+[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Imagens/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2Vuc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Imagem/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VtXEluZGV4LmNzaHRtbA==
+[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Imagens/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2Vuc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Imovel/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1vdmVsXENyZWF0ZS5jc2h0bWw=
+[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Imoveis/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1vdmVpc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Imovel/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1vdmVsXERlbGV0ZS5jc2h0bWw=
+[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Imoveis/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1vdmVpc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Imovel/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1vdmVsXERldGFpbHMuY3NodG1s
+[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Imoveis/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1vdmVpc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Imovel/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1vdmVsXEVkaXQuY3NodG1s
+[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Imoveis/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1vdmVpc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Imovel/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1vdmVsXEluZGV4LmNzaHRtbA==
+[C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Imoveis/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1vdmVpc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Alec/Projetos/ImobAdmin/ImobAdmin/Views/Shared/Error.cshtml]

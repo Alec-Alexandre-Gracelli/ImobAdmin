@@ -1,0 +1,22 @@
+﻿@model ImobAdmin.Models.Bairro
+
+@{
+    ViewData["Title"] = "Detalhes";
+}
+
+<h1>Detalhes</h1>
+
+<div>
+    <h4>Bairro</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BairroNome)
+        </dt>
+         <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BairroNome)
+        </dd>
+    </dl>
+    <a asp-action="Edit" asp-route-id="@Model.BairroNome">Editar</a> |
+    <a asp-action="Index">Voltar</a>
+</div>

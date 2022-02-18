@@ -14,24 +14,16 @@ namespace ImobAdmin.Controllers
             _context = context;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> List()
         {
             return View(await _context.Imoveis.ToListAsync());
         }
 
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
 
             var imovel = await _context.Imoveis
                 .FirstOrDefaultAsync(m => m.ImovelId == id);
-            if (imovel == null)
-            {
-                return NotFound();
-            }
 
             return View(imovel);
         }

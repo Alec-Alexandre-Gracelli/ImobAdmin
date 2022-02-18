@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ImobAdmin.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20220216131731_CreateIdentitySchema")]
-    partial class CreateIdentitySchema
+    [Migration("20220218132437_MigracaoInicial")]
+    partial class MigracaoInicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
