@@ -40,8 +40,11 @@ namespace ImobAdmin.Controllers
 
         public async Task<IActionResult> Create()
         {
+
             ViewBag.CidadeId = new SelectList(await DropDown.RetornaCidades(_context), "CidadeId", "CidadeNome");
+
             return View();
+
         }
 
         [HttpPost]
@@ -56,6 +59,7 @@ namespace ImobAdmin.Controllers
             }
 
             ViewBag.CidadeId = new SelectList(await DropDown.RetornaCidades(_context), "CidadeId", "CidadeNome", bairro.CidadeId);
+
 
             return View(bairro);
         }
@@ -73,6 +77,8 @@ namespace ImobAdmin.Controllers
                 return NotFound();
             }
             ViewBag.CidadeId = new SelectList(await DropDown.RetornaCidades(_context), "CidadeId", "CidadeNome", bairro.CidadeId);
+
+
 
             return View(bairro);
         }

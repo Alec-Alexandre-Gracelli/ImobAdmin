@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Criar";
+
 }
 
 <h1>Criar</h1>
@@ -11,7 +12,19 @@
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>         
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="CategoriaId" class="control-label"></label>
+                <select asp-for="CategoriaId" class="form-control" asp-items="ViewBag.Cat">
+                    <option value="" selected>Selecione</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="BairroId" class="control-label"></label>
+                <select asp-for="BairroId" class="form-control" asp-items="ViewBag.Bairro">
+                    <option value="" selected>Selecione</option>
+                </select>
+            </div>
             <div class="form-group">
                 <label asp-for="Preco" class="control-label"></label>
                 <input asp-for="Preco" class="form-control" />
@@ -27,14 +40,16 @@
                 <input asp-for="TelContato" class="form-control" />
                 <span asp-validation-for="TelContato" class="text-danger"></span>
             </div>
-            <div class="form-group">
+
+                        <div class="form-group">
                 <label asp-for="TipoAcao" class="control-label"></label>
-                <input asp-for="TipoAcao" class="form-control" />
-                <span asp-validation-for="TipoAcao" class="text-danger"></span>
+                <select asp-for="TipoAcao" class="form-control" asp-items="ViewBag.Status">
+                    <option value="" selected>Selecione</option>
+                </select>
             </div>
             <div class="form-group">
                 <label asp-for="EstaEmDestaque" class="control-label"></label>
-                <input asp-for="EstaEmDestaque" class="form-control" />
+                <input asp-for="EstaEmDestaque" />
                 <span asp-validation-for="EstaEmDestaque" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -69,17 +84,17 @@
             </div>
             <div class="form-group">
                 <label asp-for="Churrasqueira" class="control-label"></label>
-                <input asp-for="Churrasqueira" class="form-control" />
+                <input asp-for="Churrasqueira" />
                 <span asp-validation-for="Churrasqueira" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Piscina" class="control-label"></label>
-                <input asp-for="Piscina" class="form-control" />
+                <input asp-for="Piscina" />
                 <span asp-validation-for="Piscina" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Edicula" class="control-label"></label>
-                <input asp-for="Edicula" class="form-control" />
+                <input asp-for="Edicula" />
                 <span asp-validation-for="Edicula" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -94,6 +109,8 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
 }
 
