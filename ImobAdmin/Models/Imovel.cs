@@ -15,8 +15,6 @@ namespace ImobAdmin.Models
 
         //--- resto
 
-        public string NomeImovel { get; set; }
-
         [Required(ErrorMessage = "Informe o preço do imóvel!")]
         [Display(Name = "Preço")]
         [Column(TypeName = "decimal(10,2)")]
