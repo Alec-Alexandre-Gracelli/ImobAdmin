@@ -71,7 +71,7 @@ namespace ImobAdmin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("CategoriaId,NomeCategoria")] Categoria categoria)
+        public async Task<IActionResult> Edit(int id, [Bind("CategoriaId,CategoriaNome")] Categoria categoria)
         {
             if (id != categoria.CategoriaId)
             {

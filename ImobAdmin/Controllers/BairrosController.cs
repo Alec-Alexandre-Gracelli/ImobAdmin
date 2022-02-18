@@ -1,6 +1,8 @@
 ﻿using ImobAdmin.Context;
+using ImobAdmin.Extensions;
 using ImobAdmin.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace ImobAdmin.Controllers
@@ -36,8 +38,9 @@ namespace ImobAdmin.Controllers
             return View(bairro);
         }
 
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
+            ViewBag.CidadeId = new SelectList(await DropDown.RetornaCidades(_context), "CidadeId", "CidadeNome");
             return View();
         }
 
@@ -51,6 +54,9 @@ namespace ImobAdmin.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
+            ViewBag.CidadeId = new SelectList(await DropDown.RetornaCidades(_context), "CidadeId", "CidadeNome", bairro.CidadeId);
+
             return View(bairro);
         }
 
@@ -66,6 +72,8 @@ namespace ImobAdmin.Controllers
             {
                 return NotFound();
             }
+            ViewBag.CidadeId = new SelectList(await DropDown.RetornaCidades(_context), "CidadeId", "CidadeNome", bairro.CidadeId);
+
             return View(bairro);
         }
 
@@ -98,6 +106,8 @@ namespace ImobAdmin.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewBag.CidadeId = new SelectList(await DropDown.RetornaCidades(_context), "CidadeId", "CidadeNome", bairro.CidadeId);
+
             return View(bairro);
         }
 

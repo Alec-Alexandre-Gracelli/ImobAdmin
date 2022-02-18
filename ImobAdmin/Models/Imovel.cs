@@ -21,8 +21,10 @@ namespace ImobAdmin.Models
         public decimal Preco { get; set; }
 
         [StringLength(50, ErrorMessage = "Ultrapassou o limite de caracteres possíveis...")]
+        [Display(Name = "Nome Contato")]
         public string NomeContato { get; set; }
-        public int TelContato { get; set; }
+        [Display(Name = "Tel. Contato")]
+        public string TelContato { get; set; }
 
         [Obsolete]
         public bool EhVenda { get; set; }
@@ -61,10 +63,15 @@ namespace ImobAdmin.Models
 
     public enum TipoAcao
     {
+        [Display(Name = "Venda")]
         Venda = 0,
+
+        [Display(Name = "Locação")]
         Locacao = 1,
 
+        [Display(Name = "Venda & Locação")]
         VendaAndLocacao = 2,
+        [Display(Name = "Temporário")]
         Temporario = 3
 
     }

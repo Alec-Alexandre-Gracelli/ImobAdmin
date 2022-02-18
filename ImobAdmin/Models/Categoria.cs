@@ -8,7 +8,7 @@ namespace ImobAdmin.Models
         [StringLength(50,ErrorMessage = "O tamanho máximo é 50 caracteres")]
         [Required(ErrorMessage = "Informe o nome da categoria")]
         [Display(Name = "Nome Categoria")]
-        public string NomeCategoria { get; set; }
+        public string CategoriaNome { get; set; }
 
         public virtual ICollection<Imovel> Imoveis { get; set; }
     }
