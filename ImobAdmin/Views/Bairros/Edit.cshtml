@@ -13,6 +13,12 @@
         <form asp-action="Editar">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
+                <label asp-for="Cidade" class="control-label"></label>
+                <select asp-for="CidadeId" class="form-control" asp-items="ViewBag.CidadeId">
+                    <option value="" selected>Selecione</option>
+                </select>
+            </div>
+            <div class="form-group">
                 <label asp-for="BairroNome" class="control-label"></label>
                 <input asp-for="BairroNome" class="form-control" />
                 <span asp-validation-for="BairroNome" class="text-danger"></span>
@@ -29,5 +35,7 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
 }
