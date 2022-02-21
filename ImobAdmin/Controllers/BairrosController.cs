@@ -41,7 +41,7 @@ namespace ImobAdmin.Controllers
         public async Task<IActionResult> Create()
         {
 
-            ViewBag.CidadeId = new SelectList(await DropDown.RetornaCidades(_context), "CidadeId", "CidadeNome");
+            ViewBag.CidadeId = new SelectList(await DropDown.RetornaCidades(_context), "ID", "Nome");
 
             return View();
 
@@ -57,8 +57,8 @@ namespace ImobAdmin.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewBag.CidadeId = new SelectList(await DropDown.RetornaCidades(_context), "ID", "Nome", bairro.CidadeId);
 
-            ViewBag.CidadeId = new SelectList(await DropDown.RetornaCidades(_context), "CidadeId", "CidadeNome", bairro.CidadeId);
 
 
             return View(bairro);
@@ -76,7 +76,7 @@ namespace ImobAdmin.Controllers
             {
                 return NotFound();
             }
-            ViewBag.CidadeId = new SelectList(await DropDown.RetornaCidades(_context), "CidadeId", "CidadeNome", bairro.CidadeId);
+            ViewBag.CidadeId = new SelectList(await DropDown.RetornaCidades(_context), "ID", "Nome", bairro.CidadeId);
 
 
 
@@ -85,7 +85,7 @@ namespace ImobAdmin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("BairroId,CidadeId,BairroNome")] Bairro bairro)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,Nome,BairroNome")] Bairro bairro)
         {
             if (id != bairro.BairroId)
             {
@@ -112,7 +112,7 @@ namespace ImobAdmin.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewBag.CidadeId = new SelectList(await DropDown.RetornaCidades(_context), "CidadeId", "CidadeNome", bairro.CidadeId);
+            ViewBag.CidadeId = new SelectList(await DropDown.RetornaCidades(_context), "ID", "Nome", bairro.CidadeId);
 
             return View(bairro);
         }

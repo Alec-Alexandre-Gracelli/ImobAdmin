@@ -41,7 +41,7 @@ namespace ImobAdmin.Controllers
 
         public async Task<IActionResult> Create()
         {
-            ViewBag.Cat = new SelectList(_context.Categorias.ToList(), "CategoriaId", "NomeCategoria");
+            ViewBag.Cat = new SelectList(_context.Categorias.ToList(), "CategoriaId", "CategoriaNome");
             ViewBag.Bairro = new SelectList(await DropDown.RetornaBairros(_context), "ID", "Nome");
 
 
