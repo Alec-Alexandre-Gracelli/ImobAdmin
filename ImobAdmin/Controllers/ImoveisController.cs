@@ -1,6 +1,8 @@
 ﻿using ImobAdmin.Context;
+using ImobAdmin.Extensions;
 using ImobAdmin.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace ImobAdmin.Controllers
@@ -36,12 +38,26 @@ namespace ImobAdmin.Controllers
             return View(imagem);
         }
 
+
+        public async Task<IActionResult> Create()
+        {
+            ViewBag.Cat = new SelectList(_context.Categorias.ToList(), "CategoriaId", "NomeCategoria");
+            ViewBag.Bairro = new SelectList(await DropDown.RetornaBairros(_context), "ID", "Nome");
+
+
+            ViewData["Status"] = this.MontarSelectListParaEnum(new TipoAcao());
+
+            return View();
+        }
+
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Imovel imovel)
         {
             if (ModelState.IsValid)
             {
+                imovel.ImagemId = 1;
                 _context.Imoveis.Add(imovel);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -61,13 +77,19 @@ namespace ImobAdmin.Controllers
             {
                 return NotFound();
             }
+
+            ViewBag.Cat = new SelectList(_context.Categorias.ToList(), "CategoriaId", "NomeCategoria", imovel.CategoriaId);
+            ViewBag.Bairro = new SelectList(await DropDown.RetornaBairros(_context), "ID", "Nome", imovel.BairroId);
+
+
+            ViewData["Status"] = this.MontarSelectListParaEnum(imovel.TipoAcao, true);
+
             return View(imovel);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ImovelId,NomeImovel,Preco,NomeContato,TelContato,TipoAcao,EstaEmDestaque,Descricao," +
-            "Dormitorios,Banheiros,Sala,Cozinha,Vagas,Churrasqueira,Piscina,Edicula")] Imovel imovel)
+        public async Task<IActionResult> Edit(int id, Imovel imovel)
         {
             if (id != imovel.ImovelId)
             {
